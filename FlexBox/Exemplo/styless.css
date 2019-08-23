@@ -1,0 +1,41 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+
+  /* align-content quando quebra em mais de uma linha, vai agrupando conforme a propriedade passada*/
+  /* space-between: Não colocar espaço no inicio */
+  /* space-around: Coloca espaço no inicio */
+  /* flex-wrap: mantem o tamanho  de cada elemento, e vai quebrando elementoa a elemento*/
+}
+
+.box {
+  width: 300px;
+  height: 60px;
+  background: #f00;
+  margin: 5px;
+
+  /* flex-grow: Faz os componentes ocuparem toda a largura da tela ou componente pai */
+  /* flex-shrink: Flag para dizer se o componente vai ficar responsivo(espremer), por padrão é 1 */
+}
+
+.red {
+  order: 1;
+}
+
+.green {
+  background-color: green;
+  order: 2;
+}
+
+.blue {
+  background-color: blue;
+  order: 0;
+}
